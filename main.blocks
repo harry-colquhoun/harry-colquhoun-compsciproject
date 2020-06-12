@@ -1,1 +1,18 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" x="0" y="0"/></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="A9qs($WW_0yE[i(zo@Vu">mySprite</variable><variable id="x%M:{u!XZ*#,;uy+?4H]">Host</variable><variable type="KIND_SpriteKind" id="ql.xg316@7{*BCNO~tP@">Player</variable><variable type="KIND_SpriteKind" id="I-M*7u=x?Lp;x/b(.q9t">Projectile</variable><variable type="KIND_SpriteKind" id="Tm{e@:!O-Y%6C1C6Ns-h">Food</variable><variable type="KIND_SpriteKind" id="JY]?O]Y:v47_vx~R:,!Q">Enemy</variable><variable type="KIND_SpriteKind" id="Irp*jgRs-jA8CmCm38H%">host</variable></variables><block type="pxt-on-start" id="p|kj%jqkgXesUsR^C8z|" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="BN,7X(5yg7A;mi+z=S04"><value name="color"><shadow type="colorindexpicker" id="z~]grc(8IwFov26y_rs,"><field name="index">2</field></shadow></value><next><block type="hudsetScore" id="p[csR;LhSiB`Nm:-+*[#"><value name="value"><shadow type="math_number" id="y)B(IIb`*.-xO(]4S2Cd"><field name="NUM">0</field></shadow></value><next><block type="hudSetLife" id="/^SDNTIVkXeMuu|n0?Tt"><value name="value"><shadow type="math_number" id="x+m!#{*l,Ym]hSE{uP=4"><field name="NUM">3</field></shadow></value><next><block type="variables_set" id="_eF-PMW#|:zfVUskqD;j"><field name="VAR" id="x%M:{u!XZ*#,;uy+?4H]">Host</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="}v%)(lMV2mUUXu9?:ZZd"><value name="img"><shadow type="screen_image_picker" id="JeaZcdS*0*Hwt{j3y:w0"><field name="img">img`
+. . . . f f f f f . . . . . . . 
+. . . f e e e e e f . . . . . . 
+. . f d d d d e e e f . . . . . 
+. c d f d d f d e e f f . . . . 
+. c d f d d f d e e d d f . . . 
+c d e e d d d d e e b d c . . . 
+c d d d d c d d e e b d c . f f 
+c c c c c d d d e e f c . f e f 
+. f d d d d d e e f f . . f e f 
+. . f f f f f e e e e f . f e f 
+. . . . f e e e e e e e f f e f 
+. . . f e f f e f e e e e f f . 
+. . . f e f f e f e e e e f . . 
+. . . f d b f d b f f e f . . . 
+. . . f d d c d d b b d f . . . 
+. . . . f f f f f f f f f . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="LQ!84Y=/roltVp@NwM$L"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="4sX-8.*+o?2:3zS/o#2w"><value name="sprite"><block type="variables_get" id="jDX;3Go]cR)SI|6Hml`M"><field name="VAR" id="x%M:{u!XZ*#,;uy+?4H]">Host</field></block></value><value name="x"><shadow type="positionPicker" id=":`(2(v?EMmwHPw09Zn}+"><field name="index">10</field></shadow></value><value name="y"><shadow type="positionPicker" id="Qg|}x{(59p*f|m61@9*2"><field name="index">50</field></shadow></value><next><block type="game_show_long_text" id="|aL#(`3kcZlAx_asJ,yG"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="`5w7pPzglxT2ME5O!N-%"><field name="TEXT">Welcome to Quiz night! How high can your score get with just 3 lives?</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
