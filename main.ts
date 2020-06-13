@@ -3,7 +3,9 @@ namespace SpriteKind {
     export const bomb = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.bomb, SpriteKind.Player, function (sprite, otherSprite) {
+    sprite.destroy()
     info.changeLifeBy(-1)
+    music.powerDown.play()
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     bullets = sprites.createProjectileFromSprite(img`
@@ -36,6 +38,10 @@ let bullets: Sprite = null
 let Monkey: Sprite = null
 scene.setBackgroundColor(2)
 info.setScore(0)
+info.setLife(3)
+game.showLongText("Mr Monkey, you must shoot as many of the blue boxes as possible!", DialogLayout.Bottom)
+game.showLongText("However, watch out for the ducks, as if a duck hits you you will lose a life...", DialogLayout.Bottom)
+game.showLongText("Use the arrows to move about and A to shoot right and B to shoot left", DialogLayout.Bottom)
 Monkey = sprites.create(img`
 . . . . f f f f f . . . . . . . 
 . . . f e e e e e f . . . . . . 
@@ -58,7 +64,7 @@ Monkey.setPosition(80, 60)
 Monkey.setFlag(SpriteFlag.StayInScreen, true)
 controller.moveSprite(Monkey)
 if (info.life() == 0) {
-    music.wawawawaa.playUntilDone()
+    music.magicWand.playUntilDone()
 }
 game.onUpdateInterval(Math.randomRange(500, 1000), function () {
     duck = sprites.create(img`
